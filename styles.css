@@ -1,0 +1,376 @@
+body {
+    margin: 0;
+  }
+  
+  .info-resize {
+   display: none; 
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  nav {
+    text-align: center;
+    width: 100%;
+    border-top: 2px dotted #1b46a6;
+    border-bottom: 2px dotted #1b46a6;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .links {
+    color: #1b46a6;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px 20px 11px 20px;
+    transition: all 0.1s linear;
+    border-radius: 3px;
+  }
+  
+  .links:hover {
+    color: white;
+    background-color: #1b46a6;
+  }
+  
+  #logo {
+    width: 80%;
+    max-width: 380px;
+    height: auto;
+    margin-right: 20px; /* Add some spacing between the logo and the nav */
+    padding: 20px 0px;
+  }
+  
+  #header-container {
+    display: flex; /* Use flexbox to center the image */
+    justify-content: center; /* Horizontally center the image */
+    align-items: center; /* Vertically center the image */
+  }
+  
+  #info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background: #1b46a6;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .info {
+    margin-right: 10px;
+  }
+  
+  .background-image {
+    /* Combine the linear gradient and the background image using a comma */
+    background-image: linear-gradient(180deg, #ffffff 5%, rgba(0, 68, 132, 0.39) 30%), url("https://i.imgur.com/ip1WnYz.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    height: 650px;
+  }
+  
+  .overlay {
+    text-align: center;
+    max-width: 100%;
+    margin-top: 10%;
+  }
+  
+  /* Add styles for the heading and paragraph */
+  h1 {
+    font-size: 50px;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 30px;
+    color: white;
+  }
+  
+  #appointment {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: lowercase;
+    letter-spacing: 1.3px;
+    color: #16202f;
+    background-color: #ffffff;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: rgba(22,32,47,0.02);
+    border-radius: 0px 0px 0px 0px;
+    box-shadow: 0px 0px 51px 0px rgba(22,32,47,0.11);
+    padding: 19px 47px 19px 47px;
+   /* Add transition properties for smooth animation */
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    display: inline-block; /* Change the display property to inline-block */
+    vertical-align: middle; /* Align the link text vertically in the container */
+  }
+  
+  #appointment:hover {
+    /* Move the link slightly up on hover */
+    transform: translateY(-7px);
+  
+    /* Change the background to transparent on hover */
+    background-color: transparent;
+  
+    /* Change the text color to white on hover */
+    color: white;
+    border: 2px solid white;
+  }
+  
+  #doctors {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 80px 20px 0px;
+  }
+  
+  .doctor-image {
+    margin-right: 120px; /* Add some spacing between the image and info */
+    margin-top: 165px;
+    max-width: 214px;
+  }
+  
+  .doctor-imageTwo {
+    margin-right: 120px; /* Add some spacing between the image and info */
+    margin-top: 115px;
+    max-width: 214px;
+  }
+  
+  .doctor-image img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .doctor-info h2 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #1b46a6;
+  }
+  
+  .doctor-info h3 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .doctor-info p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #797979;
+    max-width: 600px;
+  }
+  
+  .services-container {
+    padding: 20px;
+    display: flex; /* Use flexbox to align the cards horizontally */
+    flex-wrap: wrap; /* Allow cards to wrap to the next line if there's not enough space */
+    justify-content: center; /* Center the cards horizontally */
+  }
+  
+  .services-header {
+    background-color: #1b46a6;
+    color: white;
+    padding: 10px;
+    text-align: center; /* Center the text inside the header */
+  }
+  
+  .services-header h2 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .service-card {
+    width: 250px; /* Set a fixed width for each card */
+    height: 510px;
+    margin: 10px; /* Add some spacing between the cards */
+    padding: 20px;
+    background-color: white;
+    border: 2px solid #d8dadc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-card img {
+    width: 100%;
+    max-width: 200px;
+    display: block;
+    margin: 0 auto 10px;
+  }
+  
+  .service-card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .service-card p {
+    font-size: 16px;
+    color: black;
+  }
+  
+  #services {
+      color: #222428;
+      font-family: "Nobile", Sans-serif;
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 60px;
+      padding-left: 100px;
+  }
+  
+  #service {
+      color: #1b46a6;
+      font-family: "Della Respira", Sans-serif;
+      font-size: 18px;
+      text-transform: uppercase;
+      line-height: 26px;
+      letter-spacing: 1.6px;
+      padding-left: 100px;
+      margin-top: 100px;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  .design {
+    width:100%;
+    background-color: #1b46a6;
+    color: white;
+    text-align: center;
+  }
+  
+  #hamburger-menu {
+    display: none; /* Hide the hamburger menu by default on larger screens */
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #1b46a6;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: solid black 1px;
+    background: #1b46a6;
+  }
+  
+  .flex-block {
+    width: 100%;
+    height: 250px;
+    color: white;
+    margin: 20px 20px;
+    text-align: left;
+  }
+  
+  .flex-block h2 {
+    margin: 0px;
+  }
+  
+  .footer-text {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* Show the hamburger menu on small screens */
+  @media (max-width: 830px) {
+    #hamburger-menu {
+      display: block;
+    }
+    
+      nav {
+      display: none; /* Hide the navigation menu on small screens */
+      justify-content: center;
+      flex-direction: column;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      border: none;
+    }
+    
+    .links {
+      color: white;
+      background-color: #1b46a6;
+      border-radius: 0;
+    }
+    
+    .links:hover {
+      background-color: #1b46a6;
+      opacity: 0.8;
+    }
+    
+    h1 {
+    font-size: 40px;
+  }
+  
+    p {
+    font-size: 20px;
+  }
+  
+    nav.active {
+      display: flex; /* Show the navigation menu when active */
+    }
+  
+    /* Rotate the bars to create the 'X' icon */
+    #hamburger-menu.active .bar:nth-child(1) {
+      transform: rotate(-45deg) translate(-8px, 7px);
+    }
+  
+    #hamburger-menu.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    #hamburger-menu.active .bar:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+    
+    .doctor-image {
+      margin-right: 20px;
+      max-width: 150px;
+      margin-top: 130px;
+    }
+    
+    .doctor-imageTwo {
+      margin-right: 20px;
+      max-width: 150px;
+      margin-top: 95px;
+    }
+    
+   .doctor-info p {
+      font-size: 16px;
+    }
+    
+    .doctor-info h2 {
+    font-size: 20px;
+  }
+  
+  .doctor-info h3 {
+    font-size: 25px;
+  }
+    
+    #services {
+      font-size: 35px;
+    }
+    
+    .info {
+      display: none;
+    }
+    .info-resize {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    
+    footer {
+      flex-wrap: wrap;
+    }
+  
+  }
